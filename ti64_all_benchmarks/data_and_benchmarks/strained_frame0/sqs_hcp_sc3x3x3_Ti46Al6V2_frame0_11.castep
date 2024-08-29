@@ -1,0 +1,1677 @@
+ +-------------------------------------------------+
+ |                                                 |
+ |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
+ |     C     A  A  S       T    E      P   P       |
+ |     C     AAAA   SS     T    EEE    PPPP        |
+ |     C     A  A     S    T    E      P           |
+ |      CCC  A  A  SSS     T    EEEEE  P           |
+ |                                                 |
+ +-------------------------------------------------+
+ |                                                 |
+ | Welcome to Academic Release CASTEP version 24.1 |
+ | Ab Initio Total Energy Program                  |
+ |                                                 |
+ | Authors:                                        |
+ | M. Segall, M. Probert, C. Pickard, P. Hasnip,   |
+ | S. Clark, K. Refson, J. R. Yates,               |
+ | A. Bartok-Partay, M. Payne                      |
+ |                                                 |
+ | Contributors:                                   |
+ | P. Lindan, P. Haynes, J. White, V. Milman,      |
+ | N. Govind, M. Gibson, P. Tulip, V. Cocula,      |
+ | B. Montanari, D. Quigley, M. Glover,            |
+ | L. Bernasconi, A. Perlov, M. Plummer,           |
+ | E. McNellis, J. Meyer, J. Gale, D. Jochym       |
+ | J. Aarons, B. Walker, R. Gillen, D. Jones       |
+ | T. Green, I. J. Bush, C. J. Armstrong,          |
+ | E. J. Higgins, E. L. Brown, M. S. McFly,        |
+ | J. Wilkins, B-C. Shih, P. J. P. Byrne,          |
+ | R. J. Maurer, J. C. Womack, J. Dziedzic,        |
+ | L. LeBlanc, T. K. Stenczel, J. Kermode,         |
+ | S. Sturniolo, B. Shi, B. Durham, M. Evans,      |
+ | M. J. Smith, A. Tamerus, Z. Hawkhead,           |
+ | V. Ravindran, T. Hollins, S. A. Joyce,          |
+ | R. T. Strong, A. M. Reilly                      |
+ |                                                 |
+ | Copyright (c) 2000 - 2023                       |
+ |                                                 |
+ |     Distributed under license from Cambridge    |
+ |     Enterprise for academic use only.           |
+ |                                                 |
+ | Please cite                                     |
+ |                                                 |
+ |     "First principles methods using CASTEP"     |
+ |                                                 |
+ |         Zeitschrift fuer Kristallographie       |
+ |           220(5-6) pp. 567-570 (2005)           |
+ |                                                 |
+ | S. J. Clark, M. D. Segall, C. J. Pickard,       |
+ | P. J. Hasnip, M. J. Probert, K. Refson,         |
+ | M. C. Payne                                     |
+ |                                                 |
+ |       in all publications arising from          |
+ |              your use of CASTEP                 |
+ |                                                 |
+ +-------------------------------------------------+
+ |                                                 |
+ |              http://www.castep.org              |
+ |                                                 |
+ +-------------------------------------------------+
+
+
+
+ Compiled for linux_x86_64_gfortran10 on Tue, 02 May 2023 15:31:46 +0100
+ from code version db08e394c+  default  Mon May 1 16:40:39 2023 +0100
+ Compiler: GNU Fortran 10.2.0; Optimisation: fast
+ Comms   : Open MPI v4.0.5
+ MATHLIBS: openblas (LAPACK version 3.9.0)
+ FFT Lib : fftw3 version fftw-3.3.8-sse2-avx-avx2-avx2_128
+ Fundamental constants values: CODATA 2018
+
+ Run started: Wed, 07 Feb 2024 15:48:24 +0000
+
+ Atomic calculation performed for Al: 1s2 2s2 2p6 3s2 3p1
+
+ Converged in 54 iterations to an ae energy of -6603.783 eV
+
+   ============================================================                
+   | Pseudopotential Report - Date of generation  7-02-2024   |                
+   ------------------------------------------------------------                
+   | Element: Al Ionic charge:  3.00 Level of theory: PBE     |                
+   | Atomic Solver: Koelling-Harmon                           |                
+   |                                                          |                
+   |               Reference Electronic Structure             |                
+   |         Orbital         Occupation         Energy        |                
+   |            3s              2.000           -0.285        |                
+   |            3p              1.000           -0.100        |                
+   |                                                          |                
+   |                 Pseudopotential Definition               |                
+   |        Beta     l      e      Rc     scheme   norm       |                
+   |          1      0   -0.285   2.192     qc      0         |                
+   |          2      0    0.250   2.192     qc      0         |                
+   |          3      1   -0.100   2.192     qc      0         |                
+   |          4      1    0.250   2.192     qc      0         |                
+   |          5      2    0.000   2.000     qc      0         |                
+   |          6      2    0.250   2.000     qc      0         |                
+   |         loc     3    0.000   2.192     pn      0         |                
+   |                                                          |                
+   | Augmentation charge Rinner = 1.398                       |                
+   | Partial core correction Rc = 1.398                       |                
+   ------------------------------------------------------------                
+   | "3|2.2|2.2|1.4|4|5|5|30:31:32U2U2"                       |                
+   ------------------------------------------------------------                
+   |      Author: Chris J. Pickard, Cambridge University      |                
+   ============================================================                
+
+ Atomic calculation performed for Ti: 1s2 2s2 2p6 3s2 3p6 3d2 4s2
+
+ Converged in 79 iterations to an ae energy of -23226.658 eV
+
+   ============================================================                
+   | Pseudopotential Report - Date of generation  7-02-2024   |                
+   ------------------------------------------------------------                
+   | Element: Ti Ionic charge: 12.00 Level of theory: PBE     |                
+   | Atomic Solver: Koelling-Harmon                           |                
+   |                                                          |                
+   |               Reference Electronic Structure             |                
+   |         Orbital         Occupation         Energy        |                
+   |            3s              2.000           -2.302        |                
+   |            3p              6.000           -1.428        |                
+   |            4s              2.000           -0.164        |                
+   |            3d              2.000           -0.157        |                
+   |                                                          |                
+   |                 Pseudopotential Definition               |                
+   |        Beta     l      e      Rc     scheme   norm       |                
+   |          1      0   -2.302   1.793     qc      0         |                
+   |          2      0   -0.164   1.793     qc      0         |                
+   |          3      0    0.250   1.793     qc      0         |                
+   |          4      1   -1.428   1.793     qc      0         |                
+   |          5      1    0.250   1.793     qc      0         |                
+   |          6      2   -0.157   1.793     qc      0         |                
+   |          7      2    0.250   1.793     qc      0         |                
+   |         loc     3    0.000   1.793     pn      0         |                
+   |                                                          |                
+   | Augmentation charge Rinner = 1.263                       |                
+   | Partial core correction Rc = 1.263                       |                
+   ------------------------------------------------------------                
+   | "3|1.8|9|10|11|30U:40:31:32(qc=5.5)"                     |                
+   ------------------------------------------------------------                
+   |      Author: Chris J. Pickard, Cambridge University      |                
+   ============================================================                
+
+ Atomic calculation performed for V: 1s2 2s2 2p6 3s2 3p6 3d3 4s2
+
+ Converged in 81 iterations to an ae energy of -25823.733 eV
+
+   ============================================================                
+   | Pseudopotential Report - Date of generation  7-02-2024   |                
+   ------------------------------------------------------------                
+   | Element: V Ionic charge: 13.00 Level of theory: PBE      |                
+   | Atomic Solver: Koelling-Harmon                           |                
+   |                                                          |                
+   |               Reference Electronic Structure             |                
+   |         Orbital         Occupation         Energy        |                
+   |            3s              2.000           -2.581        |                
+   |            3p              6.000           -1.618        |                
+   |            3d              3.000           -0.190        |                
+   |            4s              2.000           -0.173        |                
+   |                                                          |                
+   |                 Pseudopotential Definition               |                
+   |        Beta     l      e      Rc     scheme   norm       |                
+   |          1      0   -2.581   1.803     qc      0         |                
+   |          2      0   -0.173   1.803     qc      0         |                
+   |          3      0    0.250   1.803     qc      0         |                
+   |          4      1   -1.618   1.803     qc      0         |                
+   |          5      1    0.250   1.803     qc      0         |                
+   |          6      2   -0.190   1.803     qc      0         |                
+   |          7      2    0.250   1.803     qc      0         |                
+   |         loc     3    0.000   1.803     pn      0         |                
+   |                                                          |                
+   | Augmentation charge Rinner = 0.600                       |                
+   | Partial core correction Rc = 0.600                       |                
+   ------------------------------------------------------------                
+   | "3|1.8|1.8|0.6|12|14|16|30U:40:31:32(qc=7)"              |                
+   ------------------------------------------------------------                
+   |      Author: Chris J. Pickard, Cambridge University      |                
+   ============================================================                
+
+ Pseudo atomic calculation performed for Al 3s2 3p1
+
+ Converged in 15 iterations to a total energy of -107.1308 eV
+
+ Pseudo atomic calculation performed for Ti 3s2 3p6 3d2 4s2
+
+ Converged in 34 iterations to a total energy of -1587.0236 eV
+
+ Pseudo atomic calculation performed for V 3s2 3p6 3d3 4s2
+
+ Converged in 35 iterations to a total energy of -2065.7874 eV
+ Calculation parallelised over 336 processes.
+ Data is distributed by G-vector(24-way) and k-point(14-way)
+
+ ************************************ Title ************************************
+ 
+
+ ***************************** General Parameters ******************************
+  
+ output verbosity                               : normal  (1)
+ write checkpoint data to                       : sqs_hcp_sc3x3x3_Ti46Al6V2_frame0_11.check
+ type of calculation                            : single point energy
+ stress calculation                             : on
+ density difference calculation                 : off
+ electron localisation func (ELF) calculation   : off
+ Hirshfeld analysis                             : off
+ polarisation (Berry phase) analysis            : off
+ molecular orbital projected DOS                : off
+ deltaSCF calculation                           : off
+ unlimited duration calculation
+ timing information                             : on
+ memory usage estimate                          : on
+ write extra output files                       : on
+ write final potential to formatted file        : off
+ write final density to formatted file          : off
+ write BibTeX reference list                    : on
+ write OTFG pseudopotential files               : on
+ write electrostatic potential file             : on
+ write bands file                               : on
+ checkpoint writing                             : off
+  
+ output         length unit                     : A
+ output           mass unit                     : amu
+ output           time unit                     : ps
+ output         charge unit                     : e
+ output           spin unit                     : hbar/2
+ output         energy unit                     : eV
+ output          force unit                     : eV/A
+ output       velocity unit                     : A/ps
+ output       pressure unit                     : GPa
+ output     inv_length unit                     : 1/A
+ output      frequency unit                     : cm-1
+ output force constant unit                     : eV/A**2
+ output         volume unit                     : A**3
+ output   IR intensity unit                     : (D/A)**2/amu
+ output         dipole unit                     : D
+ output         efield unit                     : eV/A/e
+ output        entropy unit                     : J/mol/K
+ output    efield chi2 unit                     : pm/V
+  
+ wavefunctions paging                           : none
+ random number generator seed                   :  154824136
+ data distribution                              : k-point only
+ optimization strategy                          : maximize speed(+++)
+
+ *********************** Exchange-Correlation Parameters ***********************
+  
+ using functional                               : Perdew Burke Ernzerhof
+ relativistic treatment                         : Koelling-Harmon
+ DFT+D: Semi-empirical dispersion correction    : off
+
+ ************************* Pseudopotential Parameters **************************
+  
+ pseudopotential representation                 : reciprocal space
+ <beta|phi> representation                      : reciprocal space
+ spin-orbit coupling                            : off
+
+ **************************** Basis Set Parameters *****************************
+  
+ plane wave basis set cut-off                   :   800.0000   eV
+ size of standard grid                          :     2.0000
+ size of   fine   gmax                          :    28.9810   1/A
+ largest prime factor in FFT                    :          5
+ finite basis set correction                    : automatic
+ number of sample energies                      :          3
+           sample  spacing                      :     5.0000   eV
+
+ **************************** Electronic Parameters ****************************
+  
+ number of  electrons                           :  596.0    
+ net charge of system                           :  0.000    
+ treating system as non-spin-polarized
+ number of bands                                :        333
+
+ ********************* Electronic Minimization Parameters **********************
+  
+ Method: Treating system as metallic with density mixing treatment of electrons,
+         and number of  SD  steps               :          1
+         and number of  CG  steps               :          4
+  
+ total energy / atom convergence tol.           : 0.1000E-05   eV
+ eigen-energy convergence tolerance             : 0.1622E-06   eV
+ max force / atom convergence tol.              : ignored
+ convergence tolerance window                   :          3   cycles
+ max. number of SCF cycles                      :         30
+ number of fixed-spin iterations                :         10
+ smearing scheme                                : Gaussian
+ smearing width                                 : 0.5000E-01   eV
+ Fermi energy convergence tolerance             : 0.2721E-13   eV
+ periodic dipole correction                     : NONE
+
+ ************************** Density Mixing Parameters **************************
+  
+ density-mixing scheme                          : Pulay
+ max. length of mixing history                  :         20
+ charge density mixing amplitude                : 0.8000    
+ cut-off energy for mixing                      :  800.0       eV
+ charge density mixing g-vector                 :  1.500       1/A
+
+ *********************** Population Analysis Parameters ************************
+  
+ Population analysis with cutoff                :  3.000       A
+ Population analysis output                     : summary and pdos components
+
+ ******************************* Developer Code ********************************
+  
+ PARALLEL: kpoint=14 : ENDPARALLEL
+ no_improve_wvfn
+
+ *******************************************************************************
+  
+
+                           -------------------------------
+                                      Unit Cell
+                           -------------------------------
+        Real Lattice(A)                      Reciprocal Lattice(1/A)
+     4.3256690    -7.5679570     0.0000100        0.726267464  -0.415117667   0.000003489
+     4.3256690     7.5679570     0.0000440        0.726267464   0.415117667   0.000005402
+    -0.0000850    -0.0000320    13.8866850       -0.000002824  -0.000001016   0.452461139
+
+                       Lattice parameters(A)       Cell Angles
+                    a =      8.716960          alpha =   89.999999
+                    b =      8.716960          beta  =   89.999994
+                    c =     13.886685          gamma =  120.497430
+
+                       Current cell volume =           909.202288       A**3
+                                   density =             2.711887   AMU/A**3
+                                           =             4.503195     g/cm^3
+
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+                         Total number of ions in cell =   54
+                      Total number of species in cell =    3
+                        Max number of any one species =   46
+
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element    Atom        Fractional coordinates of atoms  x
+            x            Number           u          v          w      x
+            x----------------------------------------------------------x
+            x  Al           1         0.219996   0.444907   0.915446   x 
+            x  Al           2         0.446433   0.883893   0.751022   x 
+            x  Al           3         0.886441   0.111002   0.249256   x 
+            x  Al           4         0.781569   0.221083   0.751621   x 
+            x  Al           5         0.885394   0.445419   0.585027   x 
+            x  Al           6         0.777651   0.548866   0.750608   x 
+            x  Ti           1         0.103279   0.232817   0.080418   x 
+            x  Ti           2         0.216155   0.108856   0.245566   x 
+            x  Ti           3         0.110011   0.219632   0.413440   x 
+            x  Ti           4         0.220396   0.113283   0.584501   x 
+            x  Ti           5         0.109255   0.221623   0.755627   x 
+            x  Ti           6         0.219503   0.114816   0.920475   x 
+            x  Ti           7         0.215066   0.447222   0.246789   x 
+            x  Ti           8         0.109295   0.558598   0.418778   x 
+            x  Ti           9         0.222706   0.439540   0.582768   x 
+            x  Ti          10         0.115625   0.554727   0.747779   x 
+            x  Ti          11         0.107393   0.880274   0.081147   x 
+            x  Ti          12         0.218892   0.774872   0.249152   x 
+            x  Ti          13         0.113514   0.892110   0.417165   x 
+            x  Ti          14         0.224863   0.783578   0.586854   x 
+            x  Ti          15         0.119497   0.889742   0.754157   x 
+            x  Ti          16         0.229912   0.775522   0.918082   x 
+            x  Ti          17         0.447801   0.220534   0.082913   x 
+            x  Ti          18         0.554973   0.109054   0.251671   x 
+            x  Ti          19         0.439409   0.220787   0.414680   x 
+            x  Ti          20         0.555972   0.109078   0.584947   x 
+            x  Ti          21         0.445984   0.216759   0.751354   x 
+            x  Ti          22         0.560802   0.103085   0.915914   x 
+            x  Ti          23         0.437336   0.553747   0.080761   x 
+            x  Ti          24         0.555177   0.444877   0.247306   x 
+            x  Ti          25         0.444371   0.556499   0.413600   x 
+            x  Ti          26         0.555187   0.443536   0.581254   x 
+            x  Ti          27         0.447221   0.554440   0.750740   x 
+            x  Ti          28         0.551306   0.441513   0.916646   x 
+            x  Ti          29         0.439201   0.889437   0.083502   x 
+            x  Ti          30         0.557427   0.783178   0.248438   x 
+            x  Ti          31         0.439909   0.886969   0.420472   x 
+            x  Ti          32         0.549436   0.772836   0.582393   x 
+            x  Ti          33         0.553858   0.778457   0.918968   x 
+            x  Ti          34         0.775398   0.217811   0.083901   x 
+            x  Ti          35         0.780941   0.226238   0.419536   x 
+            x  Ti          36         0.898446   0.122743   0.582247   x 
+            x  Ti          37         0.781084   0.557143   0.079138   x 
+            x  Ti          38         0.892695   0.446386   0.249959   x 
+            x  Ti          39         0.777701   0.556095   0.418633   x 
+            x  Ti          40         0.895009   0.437072   0.915384   x 
+            x  Ti          41         0.785430   0.896558   0.081420   x 
+            x  Ti          42         0.887957   0.781146   0.250966   x 
+            x  Ti          43         0.778287   0.892939   0.418009   x 
+            x  Ti          44         0.892531   0.775469   0.587315   x 
+            x  Ti          45         0.775386   0.893703   0.751153   x 
+            x  Ti          46         0.885543   0.776190   0.913040   x 
+            x  V            1         0.116433   0.560537   0.079059   x 
+            x  V            2         0.888941   0.112801   0.919001   x 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+                         No user defined ionic velocities
+
+                           -------------------------------
+                                   Details of Species
+                           -------------------------------
+
+                               Mass of species in AMU
+                                    Al   26.9815400
+                                    Ti   47.8670000
+                                    V   50.9415000
+
+                          Electric Quadrupole Moment (Barn)
+                                    Al    0.1466000 Isotope 27
+                                    Ti    0.3020000 Isotope 47
+                                    V   -0.0520000 Isotope 51
+
+                          Files used for pseudopotentials:
+                                    Al 3|2.2|2.2|1.4|4|5|5|30:31:32U2U2
+                                    Ti 3|1.8|9|10|11|30U:40:31:32(qc=5.5)
+                                    V 3|1.8|1.8|0.6|12|14|16|30U:40:31:32(qc=7)
+
+                           -------------------------------
+                              k-Points For BZ Sampling
+                           -------------------------------
+                       MP grid size for SCF calculation is  7  7  4
+                            with an offset of   0.000  0.000  0.000
+                       Number of kpoints used =            98
+
+                           -------------------------------
+                               Symmetry and Constraints
+                           -------------------------------
+
+                      Maximum deviation from symmetry =  0.00000         ANG
+
+                      Number of symmetry operations   =           1
+                      Number of ionic constraints     =           3
+                      Point group of crystal =     1: C1, 1, 1
+                      Space group of crystal =     1: P1, P 1
+
+             Set iprint > 1 for details on symmetry rotations/translations
+
+                         Centre of mass is constrained
+             Set iprint > 1 for details of linear ionic constraints
+
+                         Number of cell constraints= 0
+                         Cell constraints are:  1 2 3 4 5 6
+
+                         External pressure/stress (GPa)
+                          0.00000   0.00000   0.00000
+                                    0.00000   0.00000
+                                              0.00000
+ 
++---------------- MEMORY AND SCRATCH DISK ESTIMATES PER PROCESS --------------+
+|                                                     Memory          Disk    |
+| Baseline code, static data and system overhead      591.0 MB         0.0 MB |
+| BLAS internal memory storage                          0.0 MB         0.0 MB |
+| Model and support data                              554.0 MB         0.0 MB |
+| Electronic energy minimisation requirements         182.7 MB         0.0 MB |
+| Force calculation requirements                        7.2 MB         0.0 MB |
+| Stress calculation requirements                       7.7 MB         0.0 MB |
+|                                               ----------------------------- |
+| Approx. total storage required per process         1327.7 MB         0.0 MB |
+|                                                                             |
+| Requirements will fluctuate during execution and may exceed these estimates |
++-----------------------------------------------------------------------------+
+Calculating finite basis set correction with  3 cut-off energies.
+Calculating total energy with cut-off of  790.000 eV.
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
+                               energy          per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -7.02173904E+004  0.00000000E+000                        25.18  <-- SCF
+      1  -7.61410950E+004  1.17004839E+001   1.09698233E+002      87.45  <-- SCF
+      2  -7.80213430E+004  9.35353694E+000   3.48194067E+001     139.73  <-- SCF
+      3  -7.81362989E+004  9.07633973E+000   2.12881278E+000     195.00  <-- SCF
+      4  -7.81414777E+004  8.29069389E+000   9.59046861E-002     253.47  <-- SCF
+      5  -7.81421705E+004  8.46155311E+000   1.28295144E-002     318.49  <-- SCF
+      6  -7.81361676E+004  8.63699252E+000  -1.11164705E-001     377.57  <-- SCF
+      7  -7.81346421E+004  8.62369130E+000  -2.82503723E-002     441.74  <-- SCF
+      8  -7.81346239E+004  8.57695006E+000  -3.36168518E-004     501.94  <-- SCF
+      9  -7.81345028E+004  8.57014037E+000  -2.24313601E-003     562.56  <-- SCF
+     10  -7.81345512E+004  8.57212038E+000   8.95565933E-004     625.64  <-- SCF
+     11  -7.81344593E+004  8.56937518E+000  -1.70091494E-003     683.94  <-- SCF
+     12  -7.81344652E+004  8.56940838E+000   1.09164649E-004     743.96  <-- SCF
+     13  -7.81344612E+004  8.56876706E+000  -7.46383879E-005     801.58  <-- SCF
+     14  -7.81344614E+004  8.56892471E+000   4.42347770E-006     853.49  <-- SCF
+     15  -7.81344611E+004  8.56893387E+000  -5.29386505E-006     899.87  <-- SCF
+     16  -7.81344611E+004  8.56898675E+000   1.27739500E-008     935.65  <-- SCF
+     17  -7.81344611E+004  8.56898227E+000  -2.00694512E-007     970.21  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy, E             =  -78134.39058330     eV
+Final free energy (E-TS)    =  -78134.46112822     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -78134.42585576     eV
+ 
+Calculating total energy with cut-off of  795.000 eV.
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
+                               energy          per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -7.81343905E+004  0.00000000E+000                       980.99  <-- SCF
+      1  -7.81344628E+004  8.56894411E+000   1.33733058E-003    1033.55  <-- SCF
+      2  -7.81344629E+004  8.56894214E+000   2.77086670E-006    1087.27  <-- SCF
+      3  -7.81344914E+004  8.56782267E+000   5.26634127E-004    1151.89  <-- SCF
+      4  -7.81344635E+004  8.56945240E+000  -5.14942535E-004    1215.89  <-- SCF
+      5  -7.81344620E+004  8.56905124E+000  -2.92912060E-005    1274.57  <-- SCF
+      6  -7.81344621E+004  8.56900543E+000   2.40723947E-006    1325.92  <-- SCF
+      7  -7.81344621E+004  8.56889275E+000  -3.65963678E-007    1365.94  <-- SCF
+      8  -7.81344621E+004  8.56892536E+000  -1.44680842E-008    1404.92  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy, E             =  -78134.39152249     eV
+Final free energy (E-TS)    =  -78134.46207219     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -78134.42679734     eV
+ 
+Calculating total energy with cut-off of  800.000 eV.
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
+                               energy          per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -7.81343914E+004  0.00000000E+000                      1415.71  <-- SCF
+      1  -7.81344665E+004  8.56912586E+000   1.38966917E-003    1475.37  <-- SCF
+      2  -7.81344666E+004  8.56912440E+000   2.83018981E-006    1533.25  <-- SCF
+      3  -7.81345593E+004  8.56801184E+000   1.71497825E-003    1604.19  <-- SCF
+      4  -7.81344675E+004  8.56940484E+000  -1.69893631E-003    1672.97  <-- SCF
+      5  -7.81344628E+004  8.56882137E+000  -8.72155060E-005    1736.13  <-- SCF
+      6  -7.81344631E+004  8.56903091E+000   6.22473481E-006    1797.38  <-- SCF
+      7  -7.81344630E+004  8.56891197E+000  -3.14545068E-006    1850.22  <-- SCF
+      8  -7.81344630E+004  8.56898259E+000  -1.80503769E-007    1893.04  <-- SCF
+      9  -7.81344630E+004  8.56897058E+000  -4.65594713E-008    1934.58  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy, E             =  -78134.39241657     eV
+Final free energy (E-TS)    =  -78134.46295351     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -78134.42768504     eV
+ 
+ For future reference: finite basis dEtot/dlog(Ecut) =      -0.145163eV
+ Total energy corrected for finite basis set =  -78134.462955 eV
+
+ ************************** Forces **************************
+ *                                                          *
+ *               Cartesian components (eV/A)                *
+ * -------------------------------------------------------- *
+ *                         x            y            z      *
+ *                                                          *
+ * Al              1      0.03721     -0.00727      0.05504 *
+ * Al              2      0.01279     -0.03552     -0.08610 *
+ * Al              3      0.01046     -0.00404      0.08672 *
+ * Al              4     -0.06597      0.02524     -0.06131 *
+ * Al              5     -0.03157     -0.04606      0.06354 *
+ * Al              6      0.05579      0.09317      0.02996 *
+ * Ti              1     -0.00031      0.00886     -0.01843 *
+ * Ti              2      0.00964      0.06907      0.00571 *
+ * Ti              3      0.01933     -0.05016      0.00072 *
+ * Ti              4     -0.01716      0.02614     -0.01810 *
+ * Ti              5      0.02385     -0.09907     -0.10562 *
+ * Ti              6      0.04753      0.06357      0.01285 *
+ * Ti              7     -0.02773      0.04192      0.03268 *
+ * Ti              8      0.00085     -0.05885     -0.04884 *
+ * Ti              9      0.04456     -0.01592      0.04728 *
+ * Ti             10     -0.08527     -0.00796      0.07990 *
+ * Ti             11      0.00062     -0.06952     -0.02011 *
+ * Ti             12     -0.01339      0.02971      0.01808 *
+ * Ti             13      0.00860     -0.00045      0.02200 *
+ * Ti             14      0.04032      0.03659      0.04874 *
+ * Ti             15     -0.05419      0.03863     -0.03105 *
+ * Ti             16     -0.05861      0.12988     -0.02076 *
+ * Ti             17      0.01337     -0.01085     -0.02617 *
+ * Ti             18      0.04087      0.02615     -0.09031 *
+ * Ti             19     -0.01315      0.00257      0.02597 *
+ * Ti             20     -0.05217      0.10925     -0.10238 *
+ * Ti             21      0.00702     -0.05248      0.00537 *
+ * Ti             22     -0.02847      0.18529      0.11029 *
+ * Ti             23      0.02296     -0.02360     -0.05460 *
+ * Ti             24     -0.02957      0.01986     -0.00128 *
+ * Ti             25      0.03028     -0.01656     -0.00270 *
+ * Ti             26      0.01619      0.01755     -0.06910 *
+ * Ti             27      0.07604     -0.02692      0.02505 *
+ * Ti             28     -0.01053      0.03760      0.09460 *
+ * Ti             29     -0.14380     -0.01752      0.00244 *
+ * Ti             30      0.01101      0.01949     -0.01187 *
+ * Ti             31     -0.02845     -0.03975     -0.06544 *
+ * Ti             32     -0.02118     -0.01500     -0.01047 *
+ * Ti             33      0.07268     -0.07782     -0.00030 *
+ * Ti             34      0.03162     -0.07635      0.01961 *
+ * Ti             35      0.00224     -0.05894     -0.03415 *
+ * Ti             36     -0.04378     -0.01655     -0.00530 *
+ * Ti             37     -0.02604     -0.03432      0.00640 *
+ * Ti             38      0.00162     -0.02663     -0.11039 *
+ * Ti             39      0.00375     -0.06878      0.12539 *
+ * Ti             40     -0.00464      0.13254     -0.01256 *
+ * Ti             41     -0.05861      0.01839     -0.00796 *
+ * Ti             42      0.01076      0.03648     -0.02859 *
+ * Ti             43     -0.03373     -0.03799     -0.06556 *
+ * Ti             44     -0.04098      0.01803     -0.06189 *
+ * Ti             45     -0.05646     -0.12978     -0.02589 *
+ * Ti             46      0.01289      0.01804      0.12125 *
+ * V               1      0.07419      0.01970      0.30357 *
+ * V               2      0.20670     -0.09908     -0.14593 *
+ *                                                          *
+ ************************************************************
+
+ ***************** Stress Tensor *****************
+ *                                               *
+ *          Cartesian components (GPa)           *
+ * --------------------------------------------- *
+ *             x             y             z     *
+ *                                               *
+ *  x     -2.106078     -0.065931     -0.180623  *
+ *  y     -0.065931     -0.573758     -0.067065  *
+ *  z     -0.180623     -0.067065     -0.785366  *
+ *                                               *
+ *  Pressure:    1.1551                          *
+ *                                               *
+ *************************************************
+
+ Pseudo atomic calculation performed for Al 3s2 3p1
+
+ Converged in 15 iterations to a total energy of -107.1308 eV
+
+ Pseudo atomic calculation performed for Ti 3s2 3p6 3d2 4s2
+
+ Converged in 34 iterations to a total energy of -1587.0236 eV
+
+ Pseudo atomic calculation performed for V 3s2 3p6 3d3 4s2
+
+ Converged in 35 iterations to a total energy of -2065.7874 eV
+Charge spilling parameter for spin component 1 = 0.09%
+
+            Orbital Populations       
+     Ion    Atom   Orbital             Charge
+  -------------------------------------------
+     Al     1      S                    0.922
+     Al     1      Px                   0.687
+     Al     1      Py                   0.688
+     Al     1      Pz                   0.707
+     Al     2      S                    0.941
+     Al     2      Px                   0.649
+     Al     2      Py                   0.707
+     Al     2      Pz                   0.711
+     Al     3      S                    0.930
+     Al     3      Px                   0.696
+     Al     3      Py                   0.688
+     Al     3      Pz                   0.711
+     Al     4      S                    0.959
+     Al     4      Px                   0.663
+     Al     4      Py                   0.683
+     Al     4      Pz                   0.685
+     Al     5      S                    0.955
+     Al     5      Px                   0.704
+     Al     5      Py                   0.703
+     Al     5      Pz                   0.646
+     Al     6      S                    0.960
+     Al     6      Px                   0.687
+     Al     6      Py                   0.656
+     Al     6      Pz                   0.689
+     Ti     1      S                    2.003
+     Ti     1      Px                   2.006
+     Ti     1      Py                   2.005
+     Ti     1      Pz                   2.007
+     Ti     1      S                    0.296
+     Ti     1      Dzz                  0.609
+     Ti     1      Dzy                  0.462
+     Ti     1      Dzx                  0.515
+     Ti     1      Dxx-yy               0.573
+     Ti     1      Dxy                  0.572
+     Ti     1      Px                   0.318
+     Ti     1      Py                   0.321
+     Ti     1      Pz                   0.282
+     Ti     2      S                    2.003
+     Ti     2      Px                   2.005
+     Ti     2      Py                   2.005
+     Ti     2      Pz                   2.005
+     Ti     2      S                    0.309
+     Ti     2      Dzz                  0.597
+     Ti     2      Dzy                  0.471
+     Ti     2      Dzx                  0.505
+     Ti     2      Dxx-yy               0.573
+     Ti     2      Dxy                  0.573
+     Ti     2      Px                   0.319
+     Ti     2      Py                   0.315
+     Ti     2      Pz                   0.314
+     Ti     3      S                    2.004
+     Ti     3      Px                   2.006
+     Ti     3      Py                   2.006
+     Ti     3      Pz                   2.006
+     Ti     3      S                    0.297
+     Ti     3      Dzz                  0.613
+     Ti     3      Dzy                  0.489
+     Ti     3      Dzx                  0.467
+     Ti     3      Dxx-yy               0.578
+     Ti     3      Dxy                  0.569
+     Ti     3      Px                   0.315
+     Ti     3      Py                   0.332
+     Ti     3      Pz                   0.299
+     Ti     4      S                    2.003
+     Ti     4      Px                   2.006
+     Ti     4      Py                   2.006
+     Ti     4      Pz                   2.006
+     Ti     4      S                    0.292
+     Ti     4      Dzz                  0.616
+     Ti     4      Dzy                  0.484
+     Ti     4      Dzx                  0.464
+     Ti     4      Dxx-yy               0.579
+     Ti     4      Dxy                  0.566
+     Ti     4      Px                   0.325
+     Ti     4      Py                   0.335
+     Ti     4      Pz                   0.337
+     Ti     5      S                    2.003
+     Ti     5      Px                   2.006
+     Ti     5      Py                   2.005
+     Ti     5      Pz                   2.006
+     Ti     5      S                    0.298
+     Ti     5      Dzz                  0.628
+     Ti     5      Dzy                  0.492
+     Ti     5      Dzx                  0.467
+     Ti     5      Dxx-yy               0.590
+     Ti     5      Dxy                  0.537
+     Ti     5      Px                   0.322
+     Ti     5      Py                   0.293
+     Ti     5      Pz                   0.314
+     Ti     6      S                    2.003
+     Ti     6      Px                   2.005
+     Ti     6      Py                   2.005
+     Ti     6      Pz                   2.005
+     Ti     6      S                    0.306
+     Ti     6      Dzz                  0.593
+     Ti     6      Dzy                  0.501
+     Ti     6      Dzx                  0.484
+     Ti     6      Dxx-yy               0.570
+     Ti     6      Dxy                  0.568
+     Ti     6      Px                   0.317
+     Ti     6      Py                   0.324
+     Ti     6      Pz                   0.319
+     Ti     7      S                    2.003
+     Ti     7      Px                   2.006
+     Ti     7      Py                   2.006
+     Ti     7      Pz                   2.005
+     Ti     7      S                    0.310
+     Ti     7      Dzz                  0.590
+     Ti     7      Dzy                  0.507
+     Ti     7      Dzx                  0.480
+     Ti     7      Dxx-yy               0.536
+     Ti     7      Dxy                  0.602
+     Ti     7      Px                   0.299
+     Ti     7      Py                   0.340
+     Ti     7      Pz                   0.328
+     Ti     8      S                    2.003
+     Ti     8      Px                   2.006
+     Ti     8      Py                   2.006
+     Ti     8      Pz                   2.006
+     Ti     8      S                    0.303
+     Ti     8      Dzz                  0.619
+     Ti     8      Dzy                  0.460
+     Ti     8      Dzx                  0.484
+     Ti     8      Dxx-yy               0.574
+     Ti     8      Dxy                  0.580
+     Ti     8      Px                   0.321
+     Ti     8      Py                   0.331
+     Ti     8      Pz                   0.287
+     Ti     9      S                    2.003
+     Ti     9      Px                   2.006
+     Ti     9      Py                   2.005
+     Ti     9      Pz                   2.005
+     Ti     9      S                    0.313
+     Ti     9      Dzz                  0.593
+     Ti     9      Dzy                  0.455
+     Ti     9      Dzx                  0.524
+     Ti     9      Dxx-yy               0.551
+     Ti     9      Dxy                  0.578
+     Ti     9      Px                   0.321
+     Ti     9      Py                   0.309
+     Ti     9      Pz                   0.328
+     Ti    10      S                    2.003
+     Ti    10      Px                   2.006
+     Ti    10      Py                   2.006
+     Ti    10      Pz                   2.006
+     Ti    10      S                    0.330
+     Ti    10      Dzz                  0.630
+     Ti    10      Dzy                  0.492
+     Ti    10      Dzx                  0.485
+     Ti    10      Dxx-yy               0.547
+     Ti    10      Dxy                  0.610
+     Ti    10      Px                   0.276
+     Ti    10      Py                   0.308
+     Ti    10      Pz                   0.306
+     Ti    11      S                    2.004
+     Ti    11      Px                   2.006
+     Ti    11      Py                   2.006
+     Ti    11      Pz                   2.006
+     Ti    11      S                    0.304
+     Ti    11      Dzz                  0.600
+     Ti    11      Dzy                  0.499
+     Ti    11      Dzx                  0.470
+     Ti    11      Dxx-yy               0.577
+     Ti    11      Dxy                  0.568
+     Ti    11      Px                   0.327
+     Ti    11      Py                   0.341
+     Ti    11      Pz                   0.318
+     Ti    12      S                    2.003
+     Ti    12      Px                   2.006
+     Ti    12      Py                   2.006
+     Ti    12      Pz                   2.006
+     Ti    12      S                    0.286
+     Ti    12      Dzz                  0.620
+     Ti    12      Dzy                  0.459
+     Ti    12      Dzx                  0.472
+     Ti    12      Dxx-yy               0.580
+     Ti    12      Dxy                  0.578
+     Ti    12      Px                   0.327
+     Ti    12      Py                   0.325
+     Ti    12      Pz                   0.343
+     Ti    13      S                    2.004
+     Ti    13      Px                   2.006
+     Ti    13      Py                   2.006
+     Ti    13      Pz                   2.006
+     Ti    13      S                    0.300
+     Ti    13      Dzz                  0.596
+     Ti    13      Dzy                  0.480
+     Ti    13      Dzx                  0.479
+     Ti    13      Dxx-yy               0.573
+     Ti    13      Dxy                  0.570
+     Ti    13      Px                   0.325
+     Ti    13      Py                   0.335
+     Ti    13      Pz                   0.314
+     Ti    14      S                    2.003
+     Ti    14      Px                   2.006
+     Ti    14      Py                   2.006
+     Ti    14      Pz                   2.006
+     Ti    14      S                    0.314
+     Ti    14      Dzz                  0.620
+     Ti    14      Dzy                  0.492
+     Ti    14      Dzx                  0.489
+     Ti    14      Dxx-yy               0.545
+     Ti    14      Dxy                  0.582
+     Ti    14      Px                   0.288
+     Ti    14      Py                   0.344
+     Ti    14      Pz                   0.303
+     Ti    15      S                    2.003
+     Ti    15      Px                   2.005
+     Ti    15      Py                   2.006
+     Ti    15      Pz                   2.005
+     Ti    15      S                    0.323
+     Ti    15      Dzz                  0.585
+     Ti    15      Dzy                  0.478
+     Ti    15      Dzx                  0.524
+     Ti    15      Dxx-yy               0.550
+     Ti    15      Dxy                  0.586
+     Ti    15      Px                   0.283
+     Ti    15      Py                   0.323
+     Ti    15      Pz                   0.331
+     Ti    16      S                    2.003
+     Ti    16      Px                   2.006
+     Ti    16      Py                   2.006
+     Ti    16      Pz                   2.006
+     Ti    16      S                    0.296
+     Ti    16      Dzz                  0.605
+     Ti    16      Dzy                  0.490
+     Ti    16      Dzx                  0.487
+     Ti    16      Dxx-yy               0.590
+     Ti    16      Dxy                  0.556
+     Ti    16      Px                   0.323
+     Ti    16      Py                   0.300
+     Ti    16      Pz                   0.299
+     Ti    17      S                    2.003
+     Ti    17      Px                   2.006
+     Ti    17      Py                   2.006
+     Ti    17      Pz                   2.006
+     Ti    17      S                    0.301
+     Ti    17      Dzz                  0.598
+     Ti    17      Dzy                  0.501
+     Ti    17      Dzx                  0.471
+     Ti    17      Dxx-yy               0.582
+     Ti    17      Dxy                  0.559
+     Ti    17      Px                   0.327
+     Ti    17      Py                   0.345
+     Ti    17      Pz                   0.321
+     Ti    18      S                    2.003
+     Ti    18      Px                   2.006
+     Ti    18      Py                   2.006
+     Ti    18      Pz                   2.006
+     Ti    18      S                    0.309
+     Ti    18      Dzz                  0.622
+     Ti    18      Dzy                  0.491
+     Ti    18      Dzx                  0.469
+     Ti    18      Dxx-yy               0.601
+     Ti    18      Dxy                  0.542
+     Ti    18      Px                   0.332
+     Ti    18      Py                   0.303
+     Ti    18      Pz                   0.319
+     Ti    19      S                    2.003
+     Ti    19      Px                   2.006
+     Ti    19      Py                   2.006
+     Ti    19      Pz                   2.006
+     Ti    19      S                    0.305
+     Ti    19      Dzz                  0.592
+     Ti    19      Dzy                  0.476
+     Ti    19      Dzx                  0.495
+     Ti    19      Dxx-yy               0.564
+     Ti    19      Dxy                  0.579
+     Ti    19      Px                   0.329
+     Ti    19      Py                   0.332
+     Ti    19      Pz                   0.326
+     Ti    20      S                    2.003
+     Ti    20      Px                   2.006
+     Ti    20      Py                   2.005
+     Ti    20      Pz                   2.006
+     Ti    20      S                    0.315
+     Ti    20      Dzz                  0.592
+     Ti    20      Dzy                  0.500
+     Ti    20      Dzx                  0.495
+     Ti    20      Dxx-yy               0.547
+     Ti    20      Dxy                  0.600
+     Ti    20      Px                   0.290
+     Ti    20      Py                   0.332
+     Ti    20      Pz                   0.279
+     Ti    21      S                    2.003
+     Ti    21      Px                   2.005
+     Ti    21      Py                   2.005
+     Ti    21      Pz                   2.005
+     Ti    21      S                    0.345
+     Ti    21      Dzz                  0.609
+     Ti    21      Dzy                  0.479
+     Ti    21      Dzx                  0.499
+     Ti    21      Dxx-yy               0.547
+     Ti    21      Dxy                  0.587
+     Ti    21      Px                   0.284
+     Ti    21      Py                   0.312
+     Ti    21      Pz                   0.338
+     Ti    22      S                    2.003
+     Ti    22      Px                   2.006
+     Ti    22      Py                   2.005
+     Ti    22      Pz                   2.006
+     Ti    22      S                    0.296
+     Ti    22      Dzz                  0.621
+     Ti    22      Dzy                  0.469
+     Ti    22      Dzx                  0.483
+     Ti    22      Dxx-yy               0.572
+     Ti    22      Dxy                  0.574
+     Ti    22      Px                   0.323
+     Ti    22      Py                   0.331
+     Ti    22      Pz                   0.276
+     Ti    23      S                    2.003
+     Ti    23      Px                   2.005
+     Ti    23      Py                   2.005
+     Ti    23      Pz                   2.006
+     Ti    23      S                    0.294
+     Ti    23      Dzz                  0.614
+     Ti    23      Dzy                  0.482
+     Ti    23      Dzx                  0.492
+     Ti    23      Dxx-yy               0.563
+     Ti    23      Dxy                  0.569
+     Ti    23      Px                   0.322
+     Ti    23      Py                   0.336
+     Ti    23      Pz                   0.296
+     Ti    24      S                    2.003
+     Ti    24      Px                   2.005
+     Ti    24      Py                   2.005
+     Ti    24      Pz                   2.005
+     Ti    24      S                    0.301
+     Ti    24      Dzz                  0.616
+     Ti    24      Dzy                  0.470
+     Ti    24      Dzx                  0.480
+     Ti    24      Dxx-yy               0.559
+     Ti    24      Dxy                  0.572
+     Ti    24      Px                   0.330
+     Ti    24      Py                   0.331
+     Ti    24      Pz                   0.328
+     Ti    25      S                    2.003
+     Ti    25      Px                   2.006
+     Ti    25      Py                   2.006
+     Ti    25      Pz                   2.006
+     Ti    25      S                    0.298
+     Ti    25      Dzz                  0.606
+     Ti    25      Dzy                  0.484
+     Ti    25      Dzx                  0.483
+     Ti    25      Dxx-yy               0.570
+     Ti    25      Dxy                  0.575
+     Ti    25      Px                   0.332
+     Ti    25      Py                   0.331
+     Ti    25      Pz                   0.330
+     Ti    26      S                    2.004
+     Ti    26      Px                   2.006
+     Ti    26      Py                   2.006
+     Ti    26      Pz                   2.006
+     Ti    26      S                    0.316
+     Ti    26      Dzz                  0.593
+     Ti    26      Dzy                  0.524
+     Ti    26      Dzx                  0.470
+     Ti    26      Dxx-yy               0.601
+     Ti    26      Dxy                  0.548
+     Ti    26      Px                   0.314
+     Ti    26      Py                   0.304
+     Ti    26      Pz                   0.310
+     Ti    27      S                    2.003
+     Ti    27      Px                   2.005
+     Ti    27      Py                   2.006
+     Ti    27      Pz                   2.005
+     Ti    27      S                    0.313
+     Ti    27      Dzz                  0.619
+     Ti    27      Dzy                  0.487
+     Ti    27      Dzx                  0.487
+     Ti    27      Dxx-yy               0.591
+     Ti    27      Dxy                  0.552
+     Ti    27      Px                   0.316
+     Ti    27      Py                   0.277
+     Ti    27      Pz                   0.313
+     Ti    28      S                    2.003
+     Ti    28      Px                   2.006
+     Ti    28      Py                   2.005
+     Ti    28      Pz                   2.006
+     Ti    28      S                    0.316
+     Ti    28      Dzz                  0.603
+     Ti    28      Dzy                  0.486
+     Ti    28      Dzx                  0.489
+     Ti    28      Dxx-yy               0.585
+     Ti    28      Dxy                  0.559
+     Ti    28      Px                   0.315
+     Ti    28      Py                   0.320
+     Ti    28      Pz                   0.302
+     Ti    29      S                    2.004
+     Ti    29      Px                   2.007
+     Ti    29      Py                   2.006
+     Ti    29      Pz                   2.006
+     Ti    29      S                    0.291
+     Ti    29      Dzz                  0.591
+     Ti    29      Dzy                  0.481
+     Ti    29      Dzx                  0.507
+     Ti    29      Dxx-yy               0.565
+     Ti    29      Dxy                  0.555
+     Ti    29      Px                   0.345
+     Ti    29      Py                   0.334
+     Ti    29      Pz                   0.301
+     Ti    30      S                    2.003
+     Ti    30      Px                   2.006
+     Ti    30      Py                   2.006
+     Ti    30      Pz                   2.005
+     Ti    30      S                    0.319
+     Ti    30      Dzz                  0.607
+     Ti    30      Dzy                  0.484
+     Ti    30      Dzx                  0.478
+     Ti    30      Dxx-yy               0.551
+     Ti    30      Dxy                  0.604
+     Ti    30      Px                   0.300
+     Ti    30      Py                   0.337
+     Ti    30      Pz                   0.320
+     Ti    31      S                    2.003
+     Ti    31      Px                   2.006
+     Ti    31      Py                   2.006
+     Ti    31      Pz                   2.006
+     Ti    31      S                    0.299
+     Ti    31      Dzz                  0.587
+     Ti    31      Dzy                  0.484
+     Ti    31      Dzx                  0.494
+     Ti    31      Dxx-yy               0.563
+     Ti    31      Dxy                  0.573
+     Ti    31      Px                   0.334
+     Ti    31      Py                   0.340
+     Ti    31      Pz                   0.322
+     Ti    32      S                    2.003
+     Ti    32      Px                   2.005
+     Ti    32      Py                   2.005
+     Ti    32      Pz                   2.006
+     Ti    32      S                    0.304
+     Ti    32      Dzz                  0.603
+     Ti    32      Dzy                  0.486
+     Ti    32      Dzx                  0.494
+     Ti    32      Dxx-yy               0.570
+     Ti    32      Dxy                  0.545
+     Ti    32      Px                   0.332
+     Ti    32      Py                   0.322
+     Ti    32      Pz                   0.298
+     Ti    33      S                    2.004
+     Ti    33      Px                   2.006
+     Ti    33      Py                   2.007
+     Ti    33      Pz                   2.006
+     Ti    33      S                    0.316
+     Ti    33      Dzz                  0.602
+     Ti    33      Dzy                  0.492
+     Ti    33      Dzx                  0.483
+     Ti    33      Dxx-yy               0.562
+     Ti    33      Dxy                  0.581
+     Ti    33      Px                   0.303
+     Ti    33      Py                   0.325
+     Ti    33      Pz                   0.300
+     Ti    34      S                    2.003
+     Ti    34      Px                   2.005
+     Ti    34      Py                   2.006
+     Ti    34      Pz                   2.006
+     Ti    34      S                    0.299
+     Ti    34      Dzz                  0.599
+     Ti    34      Dzy                  0.500
+     Ti    34      Dzx                  0.477
+     Ti    34      Dxx-yy               0.573
+     Ti    34      Dxy                  0.555
+     Ti    34      Px                   0.341
+     Ti    34      Py                   0.316
+     Ti    34      Pz                   0.301
+     Ti    35      S                    2.003
+     Ti    35      Px                   2.006
+     Ti    35      Py                   2.006
+     Ti    35      Pz                   2.006
+     Ti    35      S                    0.305
+     Ti    35      Dzz                  0.616
+     Ti    35      Dzy                  0.483
+     Ti    35      Dzx                  0.486
+     Ti    35      Dxx-yy               0.576
+     Ti    35      Dxy                  0.568
+     Ti    35      Px                   0.328
+     Ti    35      Py                   0.317
+     Ti    35      Pz                   0.280
+     Ti    36      S                    2.003
+     Ti    36      Px                   2.005
+     Ti    36      Py                   2.006
+     Ti    36      Pz                   2.006
+     Ti    36      S                    0.314
+     Ti    36      Dzz                  0.593
+     Ti    36      Dzy                  0.475
+     Ti    36      Dzx                  0.524
+     Ti    36      Dxx-yy               0.559
+     Ti    36      Dxy                  0.571
+     Ti    36      Px                   0.328
+     Ti    36      Py                   0.304
+     Ti    36      Pz                   0.315
+     Ti    37      S                    2.003
+     Ti    37      Px                   2.005
+     Ti    37      Py                   2.005
+     Ti    37      Pz                   2.005
+     Ti    37      S                    0.302
+     Ti    37      Dzz                  0.598
+     Ti    37      Dzy                  0.472
+     Ti    37      Dzx                  0.489
+     Ti    37      Dxx-yy               0.563
+     Ti    37      Dxy                  0.579
+     Ti    37      Px                   0.330
+     Ti    37      Py                   0.339
+     Ti    37      Pz                   0.330
+     Ti    38      S                    2.003
+     Ti    38      Px                   2.005
+     Ti    38      Py                   2.005
+     Ti    38      Pz                   2.005
+     Ti    38      S                    0.309
+     Ti    38      Dzz                  0.598
+     Ti    38      Dzy                  0.487
+     Ti    38      Dzx                  0.478
+     Ti    38      Dxx-yy               0.605
+     Ti    38      Dxy                  0.542
+     Ti    38      Px                   0.333
+     Ti    38      Py                   0.298
+     Ti    38      Pz                   0.325
+     Ti    39      S                    2.003
+     Ti    39      Px                   2.006
+     Ti    39      Py                   2.006
+     Ti    39      Pz                   2.006
+     Ti    39      S                    0.302
+     Ti    39      Dzz                  0.616
+     Ti    39      Dzy                  0.466
+     Ti    39      Dzx                  0.483
+     Ti    39      Dxx-yy               0.587
+     Ti    39      Dxy                  0.570
+     Ti    39      Px                   0.330
+     Ti    39      Py                   0.317
+     Ti    39      Pz                   0.304
+     Ti    40      S                    2.003
+     Ti    40      Px                   2.005
+     Ti    40      Py                   2.005
+     Ti    40      Pz                   2.005
+     Ti    40      S                    0.301
+     Ti    40      Dzz                  0.626
+     Ti    40      Dzy                  0.467
+     Ti    40      Dzx                  0.496
+     Ti    40      Dxx-yy               0.601
+     Ti    40      Dxy                  0.543
+     Ti    40      Px                   0.326
+     Ti    40      Py                   0.286
+     Ti    40      Pz                   0.291
+     Ti    41      S                    2.003
+     Ti    41      Px                   2.006
+     Ti    41      Py                   2.006
+     Ti    41      Pz                   2.006
+     Ti    41      S                    0.289
+     Ti    41      Dzz                  0.604
+     Ti    41      Dzy                  0.481
+     Ti    41      Dzx                  0.493
+     Ti    41      Dxx-yy               0.568
+     Ti    41      Dxy                  0.575
+     Ti    41      Px                   0.317
+     Ti    41      Py                   0.324
+     Ti    41      Pz                   0.310
+     Ti    42      S                    2.003
+     Ti    42      Px                   2.006
+     Ti    42      Py                   2.006
+     Ti    42      Pz                   2.006
+     Ti    42      S                    0.317
+     Ti    42      Dzz                  0.613
+     Ti    42      Dzy                  0.457
+     Ti    42      Dzx                  0.500
+     Ti    42      Dxx-yy               0.587
+     Ti    42      Dxy                  0.568
+     Ti    42      Px                   0.320
+     Ti    42      Py                   0.315
+     Ti    42      Pz                   0.322
+     Ti    43      S                    2.003
+     Ti    43      Px                   2.006
+     Ti    43      Py                   2.005
+     Ti    43      Pz                   2.006
+     Ti    43      S                    0.302
+     Ti    43      Dzz                  0.605
+     Ti    43      Dzy                  0.479
+     Ti    43      Dzx                  0.489
+     Ti    43      Dxx-yy               0.573
+     Ti    43      Dxy                  0.574
+     Ti    43      Px                   0.322
+     Ti    43      Py                   0.331
+     Ti    43      Pz                   0.304
+     Ti    44      S                    2.003
+     Ti    44      Px                   2.006
+     Ti    44      Py                   2.005
+     Ti    44      Pz                   2.005
+     Ti    44      S                    0.317
+     Ti    44      Dzz                  0.602
+     Ti    44      Dzy                  0.497
+     Ti    44      Dzx                  0.490
+     Ti    44      Dxx-yy               0.597
+     Ti    44      Dxy                  0.549
+     Ti    44      Px                   0.316
+     Ti    44      Py                   0.304
+     Ti    44      Pz                   0.319
+     Ti    45      S                    2.003
+     Ti    45      Px                   2.006
+     Ti    45      Py                   2.005
+     Ti    45      Pz                   2.005
+     Ti    45      S                    0.322
+     Ti    45      Dzz                  0.586
+     Ti    45      Dzy                  0.499
+     Ti    45      Dzx                  0.491
+     Ti    45      Dxx-yy               0.631
+     Ti    45      Dxy                  0.527
+     Ti    45      Px                   0.335
+     Ti    45      Py                   0.256
+     Ti    45      Pz                   0.346
+     Ti    46      S                    2.003
+     Ti    46      Px                   2.005
+     Ti    46      Py                   2.005
+     Ti    46      Pz                   2.006
+     Ti    46      S                    0.304
+     Ti    46      Dzz                  0.615
+     Ti    46      Dzy                  0.480
+     Ti    46      Dzx                  0.492
+     Ti    46      Dxx-yy               0.555
+     Ti    46      Dxy                  0.574
+     Ti    46      Px                   0.325
+     Ti    46      Py                   0.339
+     Ti    46      Pz                   0.306
+      V     1      S                    2.001
+      V     1      Px                   2.003
+      V     1      Py                   2.003
+      V     1      Pz                   2.003
+      V     1      Dzz                  0.875
+      V     1      Dzy                  0.635
+      V     1      Dzx                  0.676
+      V     1      Dxx-yy               0.766
+      V     1      Dxy                  0.775
+      V     1      S                    0.364
+      V     1      Px                   0.339
+      V     1      Py                   0.319
+      V     1      Pz                   0.302
+      V     2      S                    2.001
+      V     2      Px                   2.003
+      V     2      Py                   2.003
+      V     2      Pz                   2.003
+      V     2      Dzz                  0.809
+      V     2      Dzy                  0.649
+      V     2      Dzx                  0.741
+      V     2      Dxx-yy               0.699
+      V     2      Dxy                  0.836
+      V     2      S                    0.374
+      V     2      Px                   0.307
+      V     2      Py                   0.331
+      V     2      Pz                   0.294
+  -------------------------------------------
+                           Total:     596.000
+  -------------------------------------------
+
+     Atomic Populations (Mulliken)
+     -----------------------------
+Species          Ion     s       p       d       f      Total   Charge (e)
+==========================================================================
+  Al              1     0.922   2.083   0.000   0.000   3.005    -0.005
+  Al              2     0.941   2.067   0.000   0.000   3.008    -0.008
+  Al              3     0.930   2.095   0.000   0.000   3.025    -0.025
+  Al              4     0.959   2.030   0.000   0.000   2.989     0.011
+  Al              5     0.955   2.053   0.000   0.000   3.007    -0.007
+  Al              6     0.960   2.032   0.000   0.000   2.992     0.008
+  Ti              1     2.299   6.939   2.731   0.000  11.969     0.031
+  Ti              2     2.312   6.964   2.719   0.000  11.995     0.005
+  Ti              3     2.301   6.964   2.715   0.000  11.980     0.020
+  Ti              4     2.295   7.014   2.709   0.000  12.018    -0.018
+  Ti              5     2.300   6.946   2.714   0.000  11.960     0.040
+  Ti              6     2.309   6.977   2.716   0.000  12.002    -0.002
+  Ti              7     2.313   6.984   2.714   0.000  12.011    -0.011
+  Ti              8     2.306   6.957   2.717   0.000  11.980     0.020
+  Ti              9     2.316   6.975   2.701   0.000  11.992     0.008
+  Ti             10     2.333   6.908   2.763   0.000  12.004    -0.004
+  Ti             11     2.307   7.005   2.714   0.000  12.026    -0.026
+  Ti             12     2.289   7.012   2.709   0.000  12.010    -0.010
+  Ti             13     2.303   6.992   2.698   0.000  11.993     0.007
+  Ti             14     2.317   6.954   2.728   0.000  11.999     0.001
+  Ti             15     2.326   6.953   2.723   0.000  12.002    -0.002
+  Ti             16     2.300   6.940   2.728   0.000  11.968     0.032
+  Ti             17     2.304   7.010   2.711   0.000  12.025    -0.025
+  Ti             18     2.313   6.972   2.726   0.000  12.010    -0.010
+  Ti             19     2.308   7.005   2.707   0.000  12.020    -0.020
+  Ti             20     2.318   6.918   2.733   0.000  11.969     0.031
+  Ti             21     2.347   6.950   2.721   0.000  12.018    -0.018
+  Ti             22     2.299   6.947   2.720   0.000  11.967     0.033
+  Ti             23     2.297   6.970   2.719   0.000  11.987     0.013
+  Ti             24     2.304   7.004   2.698   0.000  12.007    -0.007
+  Ti             25     2.302   7.011   2.717   0.000  12.030    -0.030
+  Ti             26     2.320   6.946   2.736   0.000  12.002    -0.002
+  Ti             27     2.316   6.923   2.737   0.000  11.975     0.025
+  Ti             28     2.319   6.954   2.723   0.000  11.996     0.004
+  Ti             29     2.294   6.999   2.698   0.000  11.992     0.008
+  Ti             30     2.323   6.974   2.724   0.000  12.020    -0.020
+  Ti             31     2.302   7.013   2.700   0.000  12.016    -0.016
+  Ti             32     2.307   6.968   2.698   0.000  11.973     0.027
+  Ti             33     2.320   6.947   2.720   0.000  11.987     0.013
+  Ti             34     2.302   6.976   2.704   0.000  11.981     0.019
+  Ti             35     2.308   6.942   2.729   0.000  11.978     0.022
+  Ti             36     2.317   6.964   2.723   0.000  12.003    -0.003
+  Ti             37     2.305   7.014   2.702   0.000  12.021    -0.021
+  Ti             38     2.312   6.971   2.711   0.000  11.994     0.006
+  Ti             39     2.305   6.968   2.722   0.000  11.994     0.006
+  Ti             40     2.304   6.919   2.732   0.000  11.955     0.045
+  Ti             41     2.292   6.967   2.720   0.000  11.980     0.020
+  Ti             42     2.320   6.975   2.726   0.000  12.022    -0.022
+  Ti             43     2.305   6.974   2.719   0.000  11.998     0.002
+  Ti             44     2.320   6.955   2.735   0.000  12.010    -0.010
+  Ti             45     2.325   6.952   2.734   0.000  12.011    -0.011
+  Ti             46     2.307   6.985   2.716   0.000  12.009    -0.009
+  V               1     2.365   6.970   3.728   0.000  13.063    -0.063
+  V               2     2.375   6.942   3.733   0.000  13.051    -0.051
+==========================================================================
+
+                 Bond                   Population      Length (A)
+======================================================================
+             Ti 16 -- V 1                    0.22        2.75791
+             Ti 1  -- V 2                    0.18        2.76150
+             Ti 9  -- Ti 36                  0.22        2.77358
+             Ti 41 -- V 2                    0.20        2.77994
+              Al 1 -- Ti 5                   0.21        2.78184
+             Ti 16 -- Ti 29                  0.13        2.78432
+              Al 1 -- Ti 1                   0.21        2.79145
+              Al 4 -- Ti 40                  0.25        2.79367
+             Ti 1  -- Ti 34                  0.19        2.79443
+              Al 1 -- Ti 40                  0.25        2.79886
+             Ti 22 -- Ti 33                  0.22        2.79986
+             Ti 1  -- V 1                    0.25        2.80034
+              Al 5 -- Al 6                   0.28        2.80035
+             Ti 40 -- V 2                    0.15        2.80063
+             Ti 7  -- Ti 38                  0.17        2.80675
+             Ti 5  -- V 2                    0.16        2.80821
+             Ti 26 -- Ti 39                  0.13        2.80945
+             Ti 11 -- Ti 37                  0.27        2.80950
+             Ti 23 -- Ti 33                  0.14        2.81017
+             Ti 16 -- Ti 33                  0.15        2.81095
+             Ti 35 -- Ti 36                  0.15        2.81183
+              Al 1 -- V 1                    0.21        2.81366
+             Ti 31 -- Ti 32                  0.13        2.81450
+             Ti 1  -- Ti 7                   0.12        2.81633
+              Al 1 -- Ti 23                  0.22        2.81694
+             Ti 5  -- Ti 6                   0.11        2.81762
+             Ti 40 -- V 1                    0.20        2.81805
+             Ti 22 -- V 2                    0.26        2.81866
+             Ti 14 -- Ti 31                  0.15        2.81954
+             Ti 29 -- V 1                    0.24        2.81996
+             Ti 10 -- Ti 14                  0.18        2.81996
+              Al 2 -- Ti 22                  0.20        2.82035
+              Al 4 -- Ti 22                  0.22        2.82089
+             Ti 15 -- Ti 46                  0.14        2.82097
+             Ti 14 -- Ti 15                  0.12        2.82142
+              Al 2 -- Ti 14                  0.20        2.82454
+             Ti 34 -- V 2                    0.17        2.82503
+              Al 2 -- Ti 45                  0.23        2.82503
+              Al 4 -- Ti 45                  0.26        2.82679
+              Al 3 -- Ti 34                  0.21        2.82687
+             Ti 15 -- Ti 21                  0.29        2.82711
+              Al 5 -- Ti 35                  0.22        2.82755
+             Ti 23 -- V 1                    0.21        2.82789
+             Ti 11 -- V 1                    0.28        2.82809
+             Ti 20 -- Ti 31                  0.12        2.82854
+             Ti 7  -- V 1                    0.17        2.82880
+             Ti 22 -- Ti 29                  0.15        2.82919
+             Ti 27 -- Ti 28                  0.14        2.82960
+              Al 6 -- Ti 46                  0.23        2.82975
+             Ti 13 -- Ti 19                  0.26        2.83175
+              Al 3 -- Ti 3                   0.20        2.83194
+             Ti 12 -- Ti 38                  0.24        2.83202
+             Ti 45 -- Ti 46                  0.12        2.83259
+             Ti 1  -- Ti 41                  0.21        2.83292
+              Al 2 -- Ti 16                  0.22        2.83319
+             Ti 3  -- Ti 36                  0.12        2.83348
+             Ti 12 -- Ti 29                  0.10        2.83377
+             Ti 37 -- Ti 46                  0.16        2.83381
+             Ti 4  -- Ti 9                   0.23        2.83391
+              Al 3 -- Ti 41                  0.21        2.83391
+              Al 2 -- Ti 33                  0.23        2.83450
+             Ti 6  -- Ti 17                  0.18        2.83487
+             Ti 1  -- Ti 23                  0.22        2.83500
+              Al 6 -- Ti 44                  0.25        2.83529
+             Ti 22 -- Ti 34                  0.12        2.83592
+              Al 1 -- Ti 10                  0.23        2.83713
+             Ti 20 -- Ti 21                  0.20        2.83791
+             Ti 17 -- Ti 24                  0.13        2.83797
+             Ti 2  -- Ti 42                  0.22        2.83823
+              Al 1 -- Ti 16                  0.25        2.83930
+             Ti 7  -- Ti 12                  0.21        2.83952
+              Al 4 -- V 2                    0.21        2.84012
+             Ti 14 -- Ti 20                  0.27        2.84071
+             Ti 28 -- Ti 37                  0.14        2.84084
+              Al 5 -- Ti 39                  0.21        2.84085
+             Ti 15 -- Ti 16                  0.14        2.84117
+              Al 3 -- Ti 30                  0.28        2.84130
+             Ti 1  -- Ti 6                   0.15        2.84172
+             Ti 9  -- Ti 10                  0.19        2.84280
+             Ti 18 -- Ti 19                  0.16        2.84313
+             Ti 6  -- Ti 11                  0.14        2.84346
+             Ti 17 -- Ti 28                  0.15        2.84456
+             Ti 11 -- Ti 16                  0.12        2.84462
+             Ti 34 -- Ti 41                  0.17        2.84594
+              Al 5 -- Ti 44                  0.27        2.84614
+              Al 5 -- Ti 10                  0.25        2.84652
+             Ti 7  -- Ti 23                  0.12        2.84707
+              Al 2 -- Ti 32                  0.22        2.84766
+             Ti 16 -- Ti 22                  0.17        2.84852
+             Ti 33 -- Ti 41                  0.12        2.84859
+             Ti 17 -- Ti 29                  0.23        2.84886
+             Ti 3  -- Ti 43                  0.25        2.84905
+             Ti 6  -- Ti 28                  0.23        2.84921
+             Ti 4  -- Ti 36                  0.21        2.84933
+             Ti 21 -- Ti 28                  0.17        2.85030
+             Ti 23 -- Ti 28                  0.16        2.85036
+             Ti 8  -- Ti 31                  0.25        2.85070
+             Ti 2  -- Ti 3                   0.14        2.85131
+             Ti 2  -- Ti 17                  0.14        2.85160
+             Ti 20 -- Ti 35                  0.16        2.85169
+             Ti 18 -- Ti 30                  0.21        2.85192
+             Ti 29 -- Ti 30                  0.14        2.85218
+             Ti 25 -- Ti 32                  0.14        2.85241
+             Ti 29 -- Ti 33                  0.11        2.85248
+             Ti 11 -- Ti 12                  0.13        2.85276
+             Ti 11 -- Ti 29                  0.22        2.85284
+             Ti 45 -- V 2                    0.20        2.85332
+             Ti 8  -- Ti 38                  0.14        2.85360
+              Al 1 -- Ti 27                  0.22        2.85424
+              Al 4 -- Ti 5                   0.25        2.85458
+             Ti 19 -- Ti 26                  0.15        2.85489
+              Al 2 -- Ti 10                  0.27        2.85521
+             Ti 9  -- Ti 32                  0.26        2.85549
+              Al 5 -- Ti 8                   0.19        2.85623
+             Ti 25 -- Ti 30                  0.11        2.85648
+              Al 3 -- Ti 1                   0.20        2.85661
+             Ti 4  -- Ti 13                  0.13        2.85686
+             Ti 27 -- Ti 32                  0.15        2.85687
+             Ti 2  -- Ti 11                  0.15        2.85741
+             Ti 10 -- Ti 40                  0.16        2.85752
+             Ti 24 -- Ti 25                  0.13        2.85768
+             Ti 32 -- Ti 43                  0.15        2.85775
+             Ti 8  -- Ti 35                  0.25        2.85821
+             Ti 18 -- Ti 34                  0.16        2.85825
+             Ti 12 -- V 1                    0.16        2.85900
+              Al 3 -- Ti 43                  0.21        2.85914
+             Ti 18 -- Ti 29                  0.12        2.85938
+              Al 2 -- Ti 20                  0.23        2.86026
+             Ti 36 -- Ti 43                  0.14        2.86040
+             Ti 8  -- Ti 12                  0.13        2.86136
+             Ti 14 -- Ti 44                  0.21        2.86171
+             Ti 42 -- Ti 43                  0.15        2.86182
+              Al 4 -- Ti 36                  0.25        2.86206
+             Ti 34 -- Ti 40                  0.12        2.86247
+             Ti 13 -- Ti 42                  0.12        2.86317
+              Al 4 -- Al 5                   0.22        2.86336
+             Ti 33 -- Ti 45                  0.14        2.86354
+             Ti 5  -- Ti 45                  0.20        2.86371
+             Ti 39 -- Ti 44                  0.13        2.86407
+             Ti 6  -- Ti 15                  0.14        2.86488
+              Al 6 -- Ti 28                  0.21        2.86546
+             Ti 21 -- Ti 22                  0.19        2.86572
+             Ti 3  -- Ti 19                  0.23        2.86630
+             Ti 17 -- Ti 34                  0.25        2.86780
+             Ti 13 -- Ti 31                  0.23        2.86854
+              Al 4 -- Ti 20                  0.25        2.86859
+             Ti 17 -- Ti 18                  0.13        2.86888
+              Al 1 -- V 2                    0.26        2.86905
+             Ti 11 -- Ti 46                  0.14        2.86910
+             Ti 19 -- Ti 24                  0.13        2.86976
+              Al 5 -- Ti 26                  0.25        2.87058
+             Ti 3  -- Ti 13                  0.25        2.87108
+              Al 6 -- Ti 40                  0.24        2.87122
+              Al 6 -- Ti 21                  0.30        2.87129
+             Ti 4  -- Ti 21                  0.13        2.87208
+              Al 5 -- Ti 36                  0.26        2.87243
+             Ti 6  -- V 2                    0.24        2.87269
+             Ti 3  -- Ti 9                   0.13        2.87357
+             Ti 41 -- Ti 46                  0.16        2.87389
+              Al 4 -- Al 6                   0.22        2.87479
+             Ti 34 -- Ti 38                  0.13        2.87493
+             Ti 41 -- Ti 42                  0.14        2.87521
+              Al 2 -- Ti 27                  0.26        2.87532
+             Ti 29 -- Ti 34                  0.24        2.87533
+             Ti 4  -- Ti 19                  0.13        2.87548
+              Al 1 -- Ti 6                   0.23        2.87606
+              Al 2 -- Ti 15                  0.23        2.87643
+             Ti 15 -- Ti 44                  0.14        2.87648
+              Al 3 -- Ti 7                   0.26        2.87668
+             Ti 18 -- Ti 31                  0.14        2.87709
+             Ti 4  -- Ti 26                  0.26        2.87732
+             Ti 35 -- Ti 38                  0.14        2.87742
+             Ti 39 -- Ti 42                  0.12        2.87744
+             Ti 8  -- Ti 9                   0.12        2.87781
+             Ti 5  -- Ti 10                  0.20        2.87794
+             Ti 26 -- Ti 27                  0.17        2.87806
+             Ti 12 -- Ti 13                  0.12        2.87829
+             Ti 9  -- Ti 27                  0.15        2.87831
+             Ti 3  -- Ti 7                   0.14        2.87856
+             Ti 14 -- Ti 32                  0.20        2.87861
+             Ti 25 -- Ti 26                  0.12        2.87898
+             Ti 11 -- Ti 42                  0.11        2.87908
+             Ti 8  -- Ti 39                  0.24        2.87948
+             Ti 9  -- Ti 25                  0.12        2.87961
+             Ti 27 -- Ti 33                  0.15        2.87965
+             Ti 23 -- Ti 24                  0.16        2.87995
+              Al 5 -- Ti 20                  0.28        2.88035
+             Ti 30 -- Ti 43                  0.13        2.88050
+             Ti 4  -- Ti 44                  0.26        2.88076
+             Ti 9  -- Ti 26                  0.29        2.88078
+              Al 3 -- Ti 18                  0.26        2.88101
+             Ti 11 -- Ti 41                  0.26        2.88118
+             Ti 8  -- Ti 14                  0.13        2.88154
+              Al 3 -- Ti 42                  0.24        2.88217
+             Ti 37 -- Ti 40                  0.13        2.88232
+             Ti 5  -- Ti 36                  0.12        2.88253
+             Ti 30 -- Ti 41                  0.15        2.88313
+             Ti 18 -- Ti 35                  0.15        2.88359
+              Al 3 -- Ti 2                   0.26        2.88410
+             Ti 13 -- Ti 14                  0.16        2.88477
+             Ti 2  -- Ti 19                  0.14        2.88568
+              Al 6 -- Ti 26                  0.21        2.88568
+             Ti 2  -- Ti 13                  0.12        2.88666
+             Ti 24 -- Ti 37                  0.14        2.88671
+             Ti 3  -- Ti 4                   0.13        2.88678
+             Ti 7  -- Ti 25                  0.14        2.88723
+              Al 1 -- Ti 33                  0.26        2.88742
+             Ti 13 -- Ti 44                  0.12        2.88780
+             Ti 27 -- Ti 45                  0.17        2.88830
+             Ti 10 -- Ti 16                  0.13        2.88853
+              Al 4 -- Ti 10                  0.29        2.88874
+             Ti 8  -- Ti 13                  0.27        2.88881
+             Ti 44 -- Ti 45                  0.20        2.88956
+             Ti 35 -- Ti 39                  0.21        2.88981
+             Ti 22 -- Ti 40                  0.22        2.89040
+             Ti 30 -- Ti 42                  0.26        2.89046
+             Ti 10 -- Ti 27                  0.17        2.89207
+             Ti 35 -- Ti 43                  0.23        2.89376
+             Ti 28 -- Ti 46                  0.27        2.89394
+             Ti 32 -- Ti 45                  0.14        2.89399
+             Ti 4  -- Ti 14                  0.20        2.89417
+             Ti 38 -- Ti 39                  0.12        2.89462
+             Ti 24 -- Ti 42                  0.29        2.89465
+             Ti 4  -- Ti 15                  0.11        2.89510
+              Al 3 -- Ti 35                  0.19        2.89549
+             Ti 33 -- V 2                    0.33        2.89573
+              Al 3 -- Ti 38                  0.25        2.89626
+             Ti 26 -- Ti 32                  0.27        2.89630
+             Ti 26 -- Ti 44                  0.27        2.89658
+             Ti 23 -- Ti 30                  0.13        2.89697
+             Ti 17 -- Ti 37                  0.28        2.89831
+             Ti 7  -- Ti 8                   0.14        2.89922
+             Ti 4  -- Ti 5                   0.13        2.89936
+             Ti 3  -- Ti 35                  0.22        2.89937
+             Ti 12 -- Ti 18                  0.20        2.89958
+             Ti 25 -- Ti 43                  0.26        2.90045
+             Ti 12 -- Ti 31                  0.12        2.90099
+             Ti 17 -- Ti 22                  0.14        2.90174
+             Ti 6  -- Ti 21                  0.14        2.90209
+             Ti 25 -- Ti 31                  0.24        2.90220
+             Ti 33 -- Ti 46                  0.28        2.90253
+             Ti 5  -- Ti 27                  0.21        2.90264
+             Ti 20 -- Ti 32                  0.26        2.90273
+              Al 1 -- Ti 28                  0.22        2.90319
+             Ti 3  -- Ti 25                  0.25        2.90357
+              Al 2 -- Ti 21                  0.23        2.90357
+             Ti 10 -- Ti 15                  0.25        2.90468
+             Ti 19 -- Ti 25                  0.24        2.90471
+              Al 6 -- Ti 27                  0.26        2.90531
+             Ti 5  -- Ti 9                   0.09        2.90547
+             Ti 13 -- Ti 39                  0.28        2.90618
+              Al 4 -- Ti 21                  0.26        2.90634
+             Ti 24 -- Ti 39                  0.11        2.90760
+             Ti 38 -- V 1                    0.14        2.90798
+             Ti 25 -- Ti 39                  0.23        2.90825
+              Al 2 -- Al 4                   0.20        2.90831
+             Ti 37 -- V 1                    0.28        2.90832
+             Ti 37 -- Ti 38                  0.12        2.90845
+             Ti 36 -- Ti 45                  0.20        2.90940
+             Ti 1  -- Ti 2                   0.16        2.91108
+             Ti 6  -- Ti 46                  0.23        2.91143
+             Ti 21 -- Ti 26                  0.13        2.91266
+             Ti 12 -- Ti 42                  0.23        2.91299
+             Ti 16 -- Ti 40                  0.18        2.91307
+             Ti 19 -- Ti 31                  0.24        2.91320
+             Ti 19 -- Ti 39                  0.27        2.91437
+             Ti 12 -- Ti 30                  0.23        2.91494
+             Ti 30 -- Ti 31                  0.11        2.91820
+             Ti 23 -- Ti 29                  0.23        2.91823
+             Ti 20 -- Ti 26                  0.23        2.91939
+             Ti 18 -- Ti 38                  0.23        2.92016
+             Ti 2  -- Ti 24                  0.27        2.92020
+             Ti 37 -- Ti 42                  0.10        2.92025
+             Ti 46 -- V 2                    0.23        2.92048
+              Al 6 -- Ti 10                  0.26        2.92077
+             Ti 31 -- Ti 43                  0.25        2.92376
+             Ti 2  -- Ti 12                  0.21        2.92393
+             Ti 13 -- Ti 43                  0.27        2.92586
+             Ti 28 -- Ti 33                  0.25        2.92608
+             Ti 20 -- Ti 36                  0.24        2.92692
+             Ti 18 -- Ti 24                  0.24        2.92708
+             Ti 19 -- Ti 20                  0.14        2.92839
+             Ti 8  -- Ti 25                  0.24        2.93105
+              Al 5 -- Ti 14                  0.26        2.93132
+             Ti 43 -- Ti 44                  0.14        2.93308
+             Ti 39 -- Ti 43                  0.24        2.93368
+             Ti 34 -- Ti 37                  0.25        2.93385
+             Ti 7  -- Ti 30                  0.30        2.93466
+             Ti 24 -- Ti 38                  0.24        2.93571
+             Ti 21 -- Ti 27                  0.26        2.93811
+             Ti 24 -- Ti 30                  0.28        2.93909
+             Ti 38 -- Ti 42                  0.29        2.93930
+             Ti 5  -- Ti 15                  0.22        2.93938
+             Ti 37 -- Ti 41                  0.21        2.93979
+             Ti 31 -- Ti 35                  0.24        2.94282
+             Ti 4  -- Ti 20                  0.19        2.94398
+             Ti 11 -- Ti 17                  0.27        2.94445
+             Ti 17 -- Ti 23                  0.25        2.95210
+              Al 6 -- Ti 15                  0.25        2.95365
+             Ti 2  -- Ti 18                  0.26        2.95380
+             Ti 19 -- Ti 35                  0.27        2.95406
+             Ti 2  -- Ti 7                   0.23        2.95440
+             Ti 5  -- Ti 21                  0.26        2.95759
+             Ti 34 -- V 1                    0.28        2.95852
+             Ti 3  -- Ti 8                   0.26        2.95885
+              Al 5 -- Ti 9                   0.24        2.96684
+             Ti 7  -- Ti 24                  0.22        2.97517
+             Ti 32 -- Ti 44                  0.29        2.97995
+             Ti 23 -- Ti 37                  0.23        2.98161
+             Ti 29 -- Ti 41                  0.22        2.98718
+             Ti 23 -- Ti 41                  0.25        2.98891
+             Ti 9  -- Ti 14                  0.24        2.99001
+             Ti 22 -- Ti 28                  0.24        2.99294
+             Ti 40 -- Ti 46                  0.21        2.99897
+======================================================================
+
+ 
+ A BibTeX formatted list of references used in this run has been written to 
+ sqs_hcp_sc3x3x3_Ti46Al6V2_frame0_11.bib
+ 
+Initialisation time =     19.06 s
+Calculation time    =   2040.06 s
+Finalisation time   =      0.31 s
+Total time          =   2059.43 s
+Peak Memory Use     = 1906352 kB
+ 
+Overall parallel efficiency rating: Mediocre (58%)
+ 
+Data was distributed by:-
+G-vector (24-way); efficiency rating: Mediocre (58%)
+k-point (14-way); efficiency rating: Excellent (96%)
